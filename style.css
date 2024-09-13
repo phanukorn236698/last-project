@@ -1,0 +1,53 @@
+/* General body styling */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light background color for the whole page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Board styling */
+#board {
+    background-image: url("https://www.siliconera.com/wp-content/uploads/2016/02/20160205_052936.png");
+    border-bottom: 20px solid lightcoral;
+    border-radius: 10px; /* Rounded corners for the board */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow to give depth */
+    margin: 20px auto; /* Center the board */
+}
+
+/* Button styling */
+button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: rgb(0, 255, 21);
+    color: rgb(206, 18, 140);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor for clickable buttons */
+}
+
+button:hover {
+    background-color: grey;
+    color: yellow;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 3px 3px rgba(255, 165, 0, 0.5); /* Highlight border on focus */
+}
+
+/* Responsive button styling */
+@media (max-width: 600px) {
+    button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
